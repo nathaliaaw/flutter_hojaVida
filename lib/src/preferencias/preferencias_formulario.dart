@@ -64,12 +64,12 @@ class PreferenciaFormulario {
     return _prefs?.getString('linkfotoperfil') ?? 'https://i.pinimg.com/236x/f1/f5/15/f1f5153cabe32239c85842fb4d0ba3c8--ps.jpg';
   }
 
-  set linkfotoperfil(String valor) {
+  set linkfotoperfil(String valor) { 
     _prefs?.setString('linkfotoperfil', valor);
   }
    int get autoincreArchivos {
     return _prefs?.getInt('autoincreArchivos') ?? 1;
-  }
+  } 
 
   set autoincreArchivos(int valor) {
     _prefs?.setInt('autoincreArchivos', valor+1);
